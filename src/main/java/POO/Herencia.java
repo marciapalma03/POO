@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.herencia;
+package POO;
 
 import java.util.ArrayList;
 import java.util.List;
