@@ -66,6 +66,11 @@ public class frmLaptop extends javax.swing.JFrame {
         });
 
         btnAceptar.setText("Aceptar");
+        btnAceptar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAceptarActionPerformed(evt);
+            }
+        });
 
         btnCancelar.setText("Cancelar");
 
@@ -141,6 +146,17 @@ public class frmLaptop extends javax.swing.JFrame {
     private void cboColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboColorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cboColorActionPerformed
+
+    private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
+        // TODO add your handling code here:
+        lista.add(new Laptop(
+        txtPantalla.getText(),
+        txtTeclado.getText(),
+        String.valueOf(cboColor.getSelectedItem()),
+        String.valueOf(cboMarca.getSelectedIndex()),
+        txtModelo.getText())
+        );
+    }//GEN-LAST:event_btnAceptarActionPerformed
 
     /**
      * @param args the command line arguments
